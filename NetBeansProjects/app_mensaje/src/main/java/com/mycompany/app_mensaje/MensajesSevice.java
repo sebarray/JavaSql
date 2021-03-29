@@ -5,10 +5,35 @@
  */
 package com.mycompany.app_mensaje;
 
+import java.util.Scanner;
+
 /**
  *
  * @author sebas
  */
 public class MensajesSevice {
+     public static  void  crearMensaje(){
+         String nombre, mensaje;
+         Scanner sc= new Scanner(System.in);
+         System.out.println("ingrese el mensaje y luego su nombre");
+         mensaje= sc.nextLine();
+         nombre= sc.nextLine();
+         Mensaje msj= new Mensaje();
+         msj.setAutor(nombre);
+         msj.setMensaje(mensaje);
+         MensajesDao.crearMensaje(msj);
+         
+    
+   }
+    public static  void leerMensaje(){
+    
+    }
+    public static  void  borrarmensaje(){
+        
+    }
+    
+    public static void  actualizar() {
+        
+    }
     
 }
